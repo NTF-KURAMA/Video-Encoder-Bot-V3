@@ -9,25 +9,23 @@ class Config(object):
     SESSION_NAME = get_config("SESSION_NAME", "AHCompressorBot")
     # AHCompressBot....
     # sucks Dude
-    APP_ID = int(get_config("APP_ID", 12345))
-    API_HASH = get_config("API_HASH", "")
-    LOG_CHANNEL = get_config("LOG_CHANNEL")
+    APP_ID = int(get_config("APP_ID", 22884130))
+    API_HASH = get_config("API_HASH", "a69e8b16dac958f1bd31eee360ec53fa")
+    LOG_CHANNEL = get_config("LOG_CHANNEL" "-1002440133959")
     UPDATES_CHANNEL = get_config("UPDATES_CHANNEL", None) # Without `@` LOL
      # Get these values from my.telegram.org
     AUTH_USERS = set(
         int(x) for x in get_config(
-            "AUTH_USERS",
-            should_prompt=True
-        ).split()
+            "AUTH_USERS", "7219138626").split()
     )
 # array , simplest method was AUTH_USERS = [] ; AUTH_USERS.append(your telegram id) 🤣
     # array to store the channel ID who are authorized to use the bot
     # dont u fucking remove this id 😤
-    TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", "7262357671:AAEPAHgF5TLvvrYtFdKx2ZbjYeBqkhZC2Eg")
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "/app/downloads")
     # Telegram maximum file upload size
-    BOT_USERNAME = get_config("BOT_USERNAME", "")
+    BOT_USERNAME = get_config("BOT_USERNAME", "Time_NTF_Bot")
     MAX_FILE_SIZE = 2097152000
     TG_MAX_FILE_SIZE = 2097152000
     FREE_USER_MAX_FILE_SIZE = 2097152000
